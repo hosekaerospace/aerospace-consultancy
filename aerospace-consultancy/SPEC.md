@@ -12,6 +12,36 @@
 
 ---
 
+## Company Background (from CV)
+
+**Founder:** Vlastimil Hošek  
+**Title:** Founder & Principal Systems Architect  
+**Location:** Zug, Switzerland  
+
+**Core Expertise:**
+- UAV Systems Design & Development
+- Command & Control (C2) Systems
+- Radio Frequency (RF) Systems
+- System Architecture
+- BVLOS (Beyond Visual Line of Sight) Operations
+- Flight Test Engineering
+
+**Previous Experience:**
+- SwissDrones — Senior System Engineer (designed C2 for long-range BVLOS)
+- Lilium — Command and Control System Engineer (eVTOL flight testing)
+- Honeywell — Systems Engineer III / Advanced Systems Engineer
+- Drone Masters s.r.o. — Co-Founder
+
+**Certifications:**
+- Private Aircraft Pilot (PPL(A))
+- Paraglider Pilot
+
+**Contact:**
+- Email: vlastimil.hosek@gmail.com
+- Phone: +41 762 449 383
+
+---
+
 ## 2. UI/UX Specification
 
 ### Layout Structure
@@ -71,16 +101,17 @@
 - Mobile: hamburger menu
 
 **Hero:**
-- Headline: "Expert Aerospace Consulting for Tomorrow's Industry"
-- Subheadline: "Engineering excellence, regulatory compliance, and innovation solutions"
+- Headline: "Expert UAV & Aerospace Systems Consulting"
+- Subheadline: "10+ years delivering mission-critical C2 systems, RF solutions, and aerospace engineering"
 - CTA: "Request Consultation" (primary), "Our Services" (secondary)
 
-**Service Cards:**
-- Icon (SVG)
-- Title
-- Short description (2 lines)
-- "Learn More" link
-- Hover: border glow, slight lift
+**Service Cards (based on actual expertise):**
+1. **UAV Systems Design** — Complete unmanned aerial vehicle design, from concept to prototype
+2. **Command & Control Systems** — C2 architecture for BVLOS operations, RF link design
+3. **System Architecture** — Mission-critical aerospace systems, avionics integration
+4. **Flight Test Engineering** — Test planning, data analysis, performance verification
+5. **RF & Communications** — Radio frequency systems, data links, telemetry
+6. **Regulatory Compliance** — BVLOS approvals, aviation authority coordination
 
 **Stats Bar:**
 - 4 metrics: "15+ Years", "200+ Projects", "50+ Clients", "100% Compliance"
