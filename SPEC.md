@@ -1,0 +1,168 @@
+# Aerospace Consultancy Website — Requirements Specification
+
+## 1. Project Overview
+
+**Project Name:** Hošek Aerospace Consulting  
+**Type:** Single-page responsive corporate website  
+**Core Functionality:** Showcase aerospace consulting services, build credibility, generate leads  
+**Target Users:** Aerospace companies, defense contractors, aircraft manufacturers, government agencies  
+**Company Description:** "With over 10 years of experience in UAV design and aerospace engineering, we provide expert consulting for the aerospace industry."  
+**Founder:** Vlastimil Hošek  
+**Specializations:** UAV design, aerospace engineering, regulatory compliance
+
+---
+
+## Company Background (from CV)
+
+**Founder:** Vlastimil Hošek  
+**Title:** Founder & Principal Systems Architect  
+**Location:** Zug, Switzerland  
+
+**Core Expertise:**
+- UAV Systems Design & Development
+- Command & Control (C2) Systems
+- Radio Frequency (RF) Systems
+- System Architecture
+- BVLOS (Beyond Visual Line of Sight) Operations
+- Flight Test Engineering
+
+**Previous Experience:**
+- SwissDrones — Senior System Engineer (designed C2 for long-range BVLOS)
+- Lilium — Command and Control System Engineer (eVTOL flight testing)
+- Honeywell — Systems Engineer III / Advanced Systems Engineer
+- Drone Masters s.r.o. — Co-Founder
+
+**Certifications:**
+- Private Aircraft Pilot (PPL(A))
+- Paraglider Pilot
+
+**Contact:**
+- Email: vlastimil.hosek@gmail.com
+- Phone: +41 762 449 383
+
+---
+
+## 2. UI/UX Specification
+
+### Layout Structure
+
+**Page Sections (in order):**
+1. **Navigation Bar** — Fixed top, transparent → solid on scroll
+2. **Hero Section** — Full viewport, background image/video, headline, CTA
+3. **About Section** — Company introduction, values, team teaser
+4. **Services Section** — Grid of 4-6 core services with icons
+5. **Why Choose Us** — Trust indicators, certifications, stats
+6. **Testimonials** — Client quotes with logos
+7. **Contact Section** — Form + contact info + map
+8. **Footer** — Links, social, copyright
+
+**Responsive Breakpoints:**
+- Mobile: < 768px (single column)
+- Tablet: 768px - 1024px (2 columns)
+- Desktop: > 1024px (full layout)
+
+### Visual Design
+
+**Brand Colors (from Logo):**
+- Primary: `#143f68` (Dark Navy Blue — trust, professionalism, aerospace heritage)
+- Secondary: `#1a5a8a` (Lighter navy for accents)
+- Accent: `#2d8bc7` (Bright blue for links/highlights)
+- Highlight: `#e8a838` (Gold/Amber for CTAs — aviation inspired)
+- Text: `#FFFFFF` (white on dark), `#143f68` (dark on light sections)
+- Background: `#143f68` → `#0a2540` gradient
+
+**Typography:**
+- Headings: "Montserrat" (from logo — bold, modern, technical)
+- Body: "Source Sans Pro" (clean, readable)
+- Sizes: H1: 56px, H2: 42px, H3: 28px, Body: 16px
+
+**Typography:**
+- Headings: "Rajdhani" (technical, modern, aerospace feel)
+- Body: "Source Sans Pro" (clean, readable)
+- Sizes: H1: 56px, H2: 42px, H3: 28px, Body: 16px
+
+**Spacing:**
+- Section padding: 100px vertical
+- Container max-width: 1200px
+- Grid gap: 30px
+
+**Visual Effects:**
+- Subtle parallax on hero
+- Hover lift on service cards (+8px Y, shadow increase)
+- Fade-in animations on scroll
+- Glowing accent borders on CTA buttons
+
+### Components
+
+**Navigation:**
+- Logo (left)
+- Links: Home, Services, About, Contact
+- CTA button: "Get Consultation"
+- Mobile: hamburger menu
+
+**Hero:**
+- Headline: "Expert UAV & Aerospace Systems Consulting"
+- Subheadline: "10+ years delivering mission-critical C2 systems, RF solutions, and aerospace engineering"
+- CTA: "Request Consultation" (primary), "Our Services" (secondary)
+
+**Service Cards (based on actual expertise):**
+1. **UAV Systems Design** — Complete unmanned aerial vehicle design, from concept to prototype
+2. **Command & Control Systems** — C2 architecture for BVLOS operations, RF link design
+3. **System Architecture** — Mission-critical aerospace systems, avionics integration
+4. **Flight Test Engineering** — Test planning, data analysis, performance verification
+5. **RF & Communications** — Radio frequency systems, data links, telemetry
+6. **Regulatory Compliance** — BVLOS approvals, aviation authority coordination
+
+**Stats Bar:**
+- 4 metrics: "15+ Years", "200+ Projects", "50+ Clients", "100% Compliance"
+- Animated counters
+
+**Contact Form:**
+- Fields: Name, Email, Company, Message
+- Validation: required + email format
+- Submit button with loading state
+
+---
+
+## 3. Functionality Specification
+
+### Core Features
+
+1. **Responsive Design** — Works on all devices
+2. **Smooth Scroll** — Anchor links scroll smoothly
+3. **Mobile Navigation** — Hamburger menu with slide-in panel
+4. **Form Handling** — Client-side validation, success message
+5. **Scroll Animations** — Elements fade in as they enter viewport
+6. **Counter Animation** — Stats count up on scroll into view
+
+### User Interactions
+
+- Click nav links → smooth scroll to section
+- Hover service cards → lift + glow effect
+- Click CTA → scroll to contact form
+- Submit form → validation → success message
+- Scroll → nav becomes solid, animations trigger
+
+### Technical Requirements
+
+- Single HTML file with embedded CSS and JS
+- No external frameworks (vanilla HTML/CSS/JS)
+- Google Fonts: Rajdhani, Source Sans Pro
+- All images: unsplash placeholders or inline SVGs
+- Form: client-side only (no backend)
+
+---
+
+## 4. Acceptance Criteria
+
+- [ ] Page loads in under 3 seconds
+- [ ] All sections visible and properly styled
+- [ ] Navigation works (desktop + mobile)
+- [ ] Mobile hamburger menu opens/closes
+- [ ] Form validates required fields
+- [ ] Form shows success message on submit
+- [ ] Scroll animations trigger correctly
+- [ ] Stats counter animates on scroll
+- [ ] All links work
+- [ ] No horizontal scroll on mobile
+- [ ] Accessible (proper heading hierarchy, alt text)
