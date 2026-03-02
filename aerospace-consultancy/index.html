@@ -161,7 +161,7 @@
         /* Hero Section */
         .hero {
             min-height: 100vh;
-            background: var(--bg-gradient);
+            background: linear-gradient(135deg, #143f68 0%, #0a2540 50%, #143f68 100%);
             display: flex;
             align-items: center;
             position: relative;
@@ -175,14 +175,16 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-            opacity: 0.5;
+            background: radial-gradient(ellipse at 30% 50%, rgba(45, 139, 199, 0.3) 0%, transparent 50%),
+                        radial-gradient(ellipse at 70% 80%, rgba(232, 168, 56, 0.15) 0%, transparent 40%);
+            opacity: 1;
         }
         
         .hero-content {
             position: relative;
             z-index: 1;
             max-width: 800px;
+            padding: 0 20px;
         }
         
         .hero h1 {
@@ -201,6 +203,11 @@
             display: flex;
             gap: 1rem;
             flex-wrap: wrap;
+        }
+        
+        .hero-buttons .btn {
+            padding: 0.75rem 1.5rem;
+            font-size: 0.9rem;
         }
         
         /* Floating aircraft graphic */
