@@ -2,10 +2,13 @@
 
 ## 1. Project Overview
 
-**Project Name:** Aerospace Consultancy Website  
+**Project Name:** Hošek Aerospace Consulting  
 **Type:** Single-page responsive corporate website  
 **Core Functionality:** Showcase aerospace consulting services, build credibility, generate leads  
-**Target Users:** Aerospace companies, defense contractors, aircraft manufacturers, government agencies
+**Target Users:** Aerospace companies, defense contractors, aircraft manufacturers, government agencies  
+**Company Description:** "With over 10 years of experience in UAV design and aerospace engineering, we provide expert consulting for the aerospace industry."  
+**Founder:** Vlastimil Hošek  
+**Specializations:** UAV design, aerospace engineering, regulatory compliance
 
 ---
 
@@ -30,13 +33,18 @@
 
 ### Visual Design
 
-**Color Palette:**
-- Primary: `#0A1628` (Deep navy — trust, professionalism)
-- Secondary: `#1E3A5F` (Medium blue)
-- Accent: `#00B4D8` (Cyan — aerospace, sky, innovation)
-- Highlight: `#F4A261` (Warm orange — CTAs, energy)
-- Text: `#FFFFFF` (white on dark), `#1A1A2E` (dark on light)
-- Background: `#0A1628` → `#162A4A` gradient
+**Brand Colors (from Logo):**
+- Primary: `#143f68` (Dark Navy Blue — trust, professionalism, aerospace heritage)
+- Secondary: `#1a5a8a` (Lighter navy for accents)
+- Accent: `#2d8bc7` (Bright blue for links/highlights)
+- Highlight: `#e8a838` (Gold/Amber for CTAs — aviation inspired)
+- Text: `#FFFFFF` (white on dark), `#143f68` (dark on light sections)
+- Background: `#143f68` → `#0a2540` gradient
+
+**Typography:**
+- Headings: "Montserrat" (from logo — bold, modern, technical)
+- Body: "Source Sans Pro" (clean, readable)
+- Sizes: H1: 56px, H2: 42px, H3: 28px, Body: 16px
 
 **Typography:**
 - Headings: "Rajdhani" (technical, modern, aerospace feel)
