@@ -11,6 +11,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Delete old sync file
+        run: rm -f .ftp-deploy-sync-state.json
+
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
