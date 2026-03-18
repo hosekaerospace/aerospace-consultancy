@@ -632,6 +632,21 @@
             color: var(--primary);
         }
         
+        .char-count {
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: #666;
+            float: right;
+        }
+        
+        .char-count.warning {
+            color: #e8a838;
+        }
+        
+        .char-count.limit {
+            color: #d32f2f;
+        }
+        
         .form-group input,
         .form-group textarea {
             width: 100%;
@@ -1086,7 +1101,7 @@
                             <input type="text" id="company" name="company">
                         </div>
                         <div class="form-group">
-                            <label for="message">Message *</label>
+                            <label for="message">Message * <span id="charCount" class="char-count">(0/2000)</span></label>
                             <textarea id="message" name="message" maxlength="2000" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
@@ -1183,6 +1198,21 @@
         // Form handling
         const contactForm = document.getElementById('contactForm');
         const formSuccess = document.getElementById('formSuccess');
+        const messageField = document.getElementById('message');
+        const charCount = document.getElementById('charCount');
+        const MAX_CHARS = 2000;
+        
+        // Character counter
+        messageField.addEventListener('input', () => {
+            const count = messageField.value.length;
+            charCount.textContent = `(${count}/${MAX_CHARS})`;
+            charCount.classList.remove('warning', 'limit');
+            if (count >= MAX_CHARS) {
+                charCount.classList.add('limit');
+            } else if (count >= MAX_CHARS - 200) {
+                charCount.classList.add('warning');
+            }
+        });
         
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -1208,6 +1238,12 @@
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
                 alert('Please enter a valid email address.');
+                return;
+            }
+            
+            // Message length validation
+            if (message.length > MAX_CHARS) {
+                alert('Message is too long. Maximum ' + MAX_CHARS + ' characters allowed.');
                 return;
             }
             
